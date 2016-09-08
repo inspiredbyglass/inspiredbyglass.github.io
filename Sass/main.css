@@ -1,0 +1,125 @@
+
+
+.ibgphoto {
+  max-width: 400px;
+  background-color: black;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+.ibgphoto div {
+  background-color: white;
+  width: 100%;
+  display: inline-block;
+  display: none;
+}
+.ibgphoto img {
+  width: 100%;
+  height: auto;
+}
+
+button {
+  position: absolute;
+}
+
+.next {
+  right: 5px;
+}
+
+.prev {
+  left: 5px;
+}
+
+
+.slide1 {
+  background-image: url(D:\Code\InspiredByGlass2\Images\PH_home.jpg);
+}
+
+.slide2 {
+  background-image: url(D:\Code\InspiredByGlass2\Images\PH_home_red.jpg);
+}
+
+.slide3 {
+  background-image: url(D:\Code\InspiredByGlass2\Images\PH_home_blue.jpg);
+}
+
+.bannerphoto img {
+  max-width: 100%;
+  height: auto;
+}
+
+.craftphoto img {
+  max-width: 100%;
+  height: auto;
+}
+
+.carousel-caption p {
+  font-family: "chaparral-pro",serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.25em;
+  text-shadow:
+   -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+
+ p {
+  font-family: "chaparral-pro",sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.25em;
+  text-align: left;
+}
+
+.navbar {
+  font-family: "chaparral-pro",serif;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.spacer {
+  padding: 1.5em;
+}
+
+.middleEarth p {
+  text-align: center;
+}
+
+.spacerLarge {
+  padding: 12.5em;
+}
+
+.photogal1 {
+  display: none;
+}
+
+.photogal2 {
+  display: none;
+}
+
+.photogal3 {
+  display: none;
+}
+
+.photogal4 {
+  display: none;
+}
+
+.cloudy {
+  opacity: 0.5;
+}
+
+.cloudy:hover {
+  opacity: 1.0;
+}
+
+@media (min-width: 992px){
+    .navbar li {
+      font-size: 1.5em;
+    }
+    .carousel-caption p {
+      font-size: 2em;
+    }
+}
