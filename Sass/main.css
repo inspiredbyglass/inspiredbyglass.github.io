@@ -113,9 +113,9 @@ button {
 
 @media (max-width: 800px){
   .navbar li {
-    font-size: 0.75em;
+    font-size: 0.5em;
   }
   .carousel-caption p {
-    font-size: 0.75em;
+    font-size: 1em;
   }
 }
