@@ -30,19 +30,6 @@ button {
   left: 5px;
 }
 
-
-.slide1 {
-  background-image: url(D:\Code\InspiredByGlass2\Images\PH_home.jpg);
-}
-
-.slide2 {
-  background-image: url(D:\Code\InspiredByGlass2\Images\PH_home_red.jpg);
-}
-
-.slide3 {
-  background-image: url(D:\Code\InspiredByGlass2\Images\PH_home_blue.jpg);
-}
-
 .bannerphoto img {
   max-width: 100%;
   height: auto;
@@ -122,4 +109,13 @@ button {
     .carousel-caption p {
       font-size: 2em;
     }
+}
+
+@media (max-width: 800px){
+  .navbar li {
+    font-size: 0.75em;
+  }
+  .carousel-caption p {
+    font-size: 0.75em;
+  }
 }
