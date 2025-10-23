@@ -1,34 +1,24 @@
+$(function () {
+  const groups = ['.photogal1', '.photogal2', '.photogal3', '.photogal4'];
+  const $groups = $(groups.join(','));
 
-var main = function(){
+  $groups.hide();
 
-$(".photogal-toggle1").click(function(){
-$(".photogal1").toggle();
-//modify others display to none as well
+  function showOnly(sel) {
+    if ($(sel).is(':visible')) {
+      $groups.hide();
+      $('.carousel').carousel('pause');
+      return;
+    }
+    $groups.hide();
+    $('.carousel').carousel('pause');
+
+    const $chosen = $(sel).show();
+    $chosen.find('.carousel').carousel({ interval: 6000 }).carousel('cycle');
+  }
+
+  $('.photogal-toggle1').on('click', () => showOnly('.photogal1'));
+  $('.photogal-toggle2').on('click', () => showOnly('.photogal2'));
+  $('.photogal-toggle3').on('click', () => showOnly('.photogal3'));
+  $('.photogal-toggle4').on('click', () => showOnly('.photogal4'));
 });
-
-$(".photogal-toggle2").click(function(){
-$(".photogal2").toggle();
-});
-
-$(".photogal-toggle3").click(function(){
-$(".photogal3").toggle();
-});
-
-$(".photogal-toggle4").click(function(){
-$(".photogal4").toggle();
-});
-
-};
-
-
-
-
-
-
-
-
-$(document).ready(main)
-
-$('.carousel').carousel({
-  interval: 6000
-})
